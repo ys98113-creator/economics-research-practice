@@ -39,7 +39,7 @@ SERIES = {
     # --- Home Price Index (Case-Shiller, monthly, SA) ---
     # Metro proxies for each region
     "hpi_northeast": "NYXRSA",    # New York
-    "hpi_south":     "MIAXRSA",   # Miami
+    "hpi_south":     "DAXRSA",    # Dallas (South proxy)
     "hpi_midwest":   "CHXRSA",    # Chicago
     "hpi_west":      "LXXRSA",    # Los Angeles
     "hpi_national":  "CSUSHPISA", # 20-city composite (benchmark)

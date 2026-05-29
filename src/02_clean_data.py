@@ -179,7 +179,7 @@ def build_panel(cpi, hpi, wages, debt, sentiment):
     print(f"    → panel_monthly.csv  {panel.shape}")
 
     # Quarterly panel (resample to quarter-end mean)
-    panel_q = panel.resample("QE").mean()
+    panel_q = panel.resample("Q").mean()
     panel_q.to_csv(os.path.join(SILVER, "panel_quarterly.csv"))
     print(f"    → panel_quarterly.csv  {panel_q.shape}")
 

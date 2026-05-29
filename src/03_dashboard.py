@@ -264,7 +264,8 @@ def correlation_heatmap(panel):
 def build_dashboard():
     print("\nBuilding dashboard  (silver → gold)\n")
 
-    stats     = read("descriptive_stats.csv")
+    stats_path = os.path.join(SILVER, "descriptive_stats.csv")
+    stats = pd.read_csv(stats_path, index_col="variable") if os.path.exists(stats_path) else None
     cpi       = read("cpi_clean.csv")
     hpi       = read("hpi_clean.csv")
     wages     = read("wages_clean.csv")
